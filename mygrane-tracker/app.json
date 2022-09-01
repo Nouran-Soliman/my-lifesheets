@@ -150,6 +150,15 @@
 			"name": "notes"
 		},
 		{
+			"type": "expression",
+			"scope": "entry",
+			"settings": {
+				"visible": "",
+				"expression": "duration(date_time - previous.end_date_time, hours)"
+			},
+			"name": "MigraneFreeTime"
+		},
+		{
 			"type": "property",
 			"scope": "entry",
 			"settings": {
