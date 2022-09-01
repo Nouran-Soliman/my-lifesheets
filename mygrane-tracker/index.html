@@ -33,6 +33,9 @@
 		<a id=entries></a>
 			<div class="field-row">
 				<button data-type="action" data-show="edit" mv-action="add(entry)" class="appearance-stretch">Add Migrane </button>
+				<button data-type="action" mv-action="set(last(entry), end_date: $today)">End Migrane</button>
+				<span data-type="expression" data-suffix=" Migranes" mv-value="count(entry) "></span>
+				<span data-type="expression" data-suffix=" Since last migrane" mv-value="duration($now - last(end_date_time))"></span>
 			</div>
 		<section mv-list="entry">
 			<article mv-list-item class="entry">
