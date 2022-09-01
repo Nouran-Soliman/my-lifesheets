@@ -198,6 +198,38 @@
 				"set_pairs": [],
 				"filter_pairs": []
 			}
+		},
+		{
+			"type": "action",
+			"scope": "root",
+			"settings": {
+				"target_preset": "last",
+				"target": "last(entry)",
+				"set_pairs": [
+					{
+						"name": "end_date",
+						"value": "$today"
+					}
+				],
+				"filter_pairs": [],
+				"label": "End Migrane"
+			}
+		},
+		{
+			"type": "expression",
+			"scope": "root",
+			"settings": {
+				"expression": "count(entry) ",
+				"suffix": " Migranes"
+			}
+		},
+		{
+			"type": "expression",
+			"scope": "root",
+			"settings": {
+				"expression": "duration($now - last(end_date_time))",
+				"suffix": " Since last migrane"
+			}
 		}
 	],
 	"charts": []
