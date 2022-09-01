@@ -1,0 +1,15 @@
+{
+	"mygrane-tracker": {
+		"name": "Mygrane Tracker",
+		"slug": "mygrane-tracker",
+		"entry_name": "Migrane ",
+		"description": "Migrane  tracker",
+		"private": false,
+		"icon": "😀",
+		"color": "#0cc4e9",
+		"storageType": "",
+		"storage": "",
+		"charts_placement": "",
+		"entries_name": "Migrane s"
+	}
+}
