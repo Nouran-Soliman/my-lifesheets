@@ -232,5 +232,22 @@
 			}
 		}
 	],
-	"charts": []
+	"charts": [
+		{
+			"type": "chart",
+			"scope": "charts",
+			"settings": {
+				"orientation": "vertical"
+			}
+		},
+		{
+			"type": "chart",
+			"scope": "charts",
+			"settings": {
+				"type": "pie",
+				"aggregate_of": "entry",
+				"group_by": "Side"
+			}
+		}
+	]
 }
