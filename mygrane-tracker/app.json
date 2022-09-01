@@ -148,12 +148,33 @@
 				"multiline": true
 			},
 			"name": "notes"
+		},
+		{
+			"type": "property",
+			"scope": "entry",
+			"settings": {
+				"number_edit": "slider",
+				"number_style": "bar",
+				"bar_style": "discrete",
+				"icon": "🤕",
+				"default": "[0]"
+			},
+			"name": "Intensity"
+		},
+		{
+			"type": "property",
+			"scope": "entry",
+			"settings": {
+				"type": "options",
+				"options": "Left, Right, Both"
+			},
+			"name": "Side"
 		}
 	],
 	"root": [
 		{
 			"type": "action",
-			"scope": "entry",
+			"scope": "root",
 			"settings": {
 				"visible": "edit",
 				"label": "Add Migrane ",
